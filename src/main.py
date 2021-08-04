@@ -3,8 +3,8 @@ import commands
 from PIL import ImageTk, Image
 import sys
 from list_pop import list_pip
-root = Tk() 
-top = Toplevel()  
+root = Tk()  
+top = Toplevel() 
 top.geometry("600x400")
 top.title("Клавиатурный тренажер")  
 var = IntVar()
@@ -33,8 +33,8 @@ def start_app():
 
 def command2():
     top.destroy() 
-    root.destroy()  
-    sys.exit()
+    root.destroy() 
+    sys.exit()  
     
     
 def command():
