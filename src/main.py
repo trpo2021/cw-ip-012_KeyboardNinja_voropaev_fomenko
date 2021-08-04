@@ -1,5 +1,5 @@
 from tkinter import *
-
+import commands
 from PIL import ImageTk, Image
 import sys
 from list_pop import list_pip
@@ -11,7 +11,7 @@ var = IntVar()
 Radiobutton(top, text='Легкая', variable=var, value=0).pack()
 Radiobutton(top, text='Нормальная', variable=var, value=1).pack()
 Radiobutton(top, text='Сложная', variable=var, value=2).pack()
-button1 = Button(top, text="Играть").pack()
+button1 = Button(top, text="Играть", command=lambda: commands.command()).pack()
 button2 = Button(top, text="Выйти", command=lambda: command2()).pack()
 img = ImageTk.PhotoImage(Image.open("images.jpg"))
 panel = Label(top, image=img)
@@ -27,13 +27,13 @@ label4.place(relx=.1, rely=.4)
 
 
 def start_app():
-    root.withdraw()  
+    root.withdraw() 
     return root
 
 
 def command2():
     top.destroy() 
-    root.destroy() 
+    root.destroy()  
     sys.exit()
     
     
