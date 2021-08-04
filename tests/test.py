@@ -26,6 +26,7 @@ class TKinterMainWindowTest(unittest.TestCase):
         self.assertIn('!text', second_win.children)
         second_win = difficulty.dif(difficulty.get_words(3))
         self.assertEqual(len(second_win.children), 2)
+<<<<<<< HEAD
         # ... и это текстовое поле
         self.assertIn('!text', second_win.children)
 
@@ -49,5 +50,10 @@ class TopLevelTest(unittest.TestCase):
         self.assertIn('!label4', children_dct)
 
 
+=======
+        self.assertIn('!text', second_win.children)
+
+
+>>>>>>> f902508818b51d106d8b1ca63b9a87c7adda2e91
 if __name__ == '__main__':
     unittest.main()
