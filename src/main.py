@@ -3,12 +3,8 @@ import commands
 from PIL import ImageTk, Image
 import sys
 from list_pop import list_pip
-<<<<<<< HEAD
 root = Tk()  
-=======
-root = Tk() 
->>>>>>> ec2ee386984cf9388933ffb7f791b70884f095f7
-top = Toplevel()  
+top = Toplevel() 
 top.geometry("600x400")
 top.title("Клавиатурный тренажер")  
 var = IntVar()
@@ -31,22 +27,14 @@ label4.place(relx=.1, rely=.4)
 
 
 def start_app():
-<<<<<<< HEAD
-    root.withdraw()  
-=======
     root.withdraw() 
->>>>>>> ec2ee386984cf9388933ffb7f791b70884f095f7
     return root
 
 
 def command2():
     top.destroy() 
-    root.destroy()  
-<<<<<<< HEAD
+    root.destroy() 
     sys.exit()  
-=======
-    sys.exit()
->>>>>>> ec2ee386984cf9388933ffb7f791b70884f095f7
     
     
 def command():
