@@ -34,7 +34,7 @@ def start_app():
 def command2():
     top.destroy() 
     root.destroy() 
-    sys.exit()  
+    sys.exit()
     
     
 def command():
@@ -44,6 +44,7 @@ def command():
         app2 = difficulty.dif(test_words1)
         app2.mainloop()
     return True
+
 
 
 if __name__ == '__main__':

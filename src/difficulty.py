@@ -55,7 +55,7 @@ def dif(test_words1):
         # create the final string to be used in the test
         test_text = " ".join(final_word_list1)
         
-        
+
     text_widget = Text(root2, height=10, width=100,
                        padx=20, pady=20, font=("Arial ", 16))
     text_widget.insert(END, test_text)
