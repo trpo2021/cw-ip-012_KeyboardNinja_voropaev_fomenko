@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 import time
+=======
+from tkinter import *
+<<<<<<< HEAD
+
+def get_words(word_num):
+    with open("words.txt", "r") as words:
+        return choices(list(words), k=word_num)
+        
+=======
+>>>>>>> ec2ee386984cf9388933ffb7f791b70884f095f7
 from random import choices
 from tkinter import *
 pos = 0
@@ -26,6 +37,7 @@ def key_type(e):
             label2 = Label(root2, text="TIME:", fg="#eee", bg="#957")
             label0 = Label(root2, text=rav, fg="#eee", bg="#957")
 
+<<<<<<< HEAD
             label1.pack()
             label2.pack()
             label0.pack()
@@ -35,12 +47,23 @@ def key_type(e):
                 lines = board.readlines()
                 lines.sort()
                 open("sort.txt", "w").write("\n".join(lines))
+=======
+>>>>>>> d3732648a00aa3ec58676ee672584064606b9e36
+>>>>>>> ec2ee386984cf9388933ffb7f791b70884f095f7
 def dif():
     global root2
     global test_text
     global text_widget
     root2 = Tk()  
+<<<<<<< HEAD
     root2.deiconify()
+=======
+<<<<<<< HEAD
+    root2.deiconify() 
+=======
+    root2.deiconify()  
+>>>>>>> d3732648a00aa3ec58676ee672584064606b9e36
+>>>>>>> ec2ee386984cf9388933ffb7f791b70884f095f7
 
     text_widget = Text(root2, height=10, width=100,
                        padx=20, pady=20, font=("Arial ", 16))
