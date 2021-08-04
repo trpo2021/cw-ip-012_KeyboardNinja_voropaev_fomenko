@@ -1,15 +1,25 @@
 from tkinter import *
+<<<<<<< HEAD
 
 def get_words(word_num):
     with open("words.txt", "r") as words:
         return choices(list(words), k=word_num)
         
+=======
+from random import choices
+
+
+>>>>>>> d3732648a00aa3ec58676ee672584064606b9e36
 def dif():
     global root2
     global test_text
     global text_widget
     root2 = Tk()  
+<<<<<<< HEAD
     root2.deiconify() 
+=======
+    root2.deiconify()  
+>>>>>>> d3732648a00aa3ec58676ee672584064606b9e36
 
     text_widget = Text(root2, height=10, width=100,
                        padx=20, pady=20, font=("Arial ", 16))
