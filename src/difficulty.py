@@ -52,7 +52,6 @@ def dif(test_words1):
    
     for i in range(len(test_words1)):
         final_word_list1.append(test_words1[i].strip())
-        # create the final string to be used in the test
         test_text = " ".join(final_word_list1)
         
 
