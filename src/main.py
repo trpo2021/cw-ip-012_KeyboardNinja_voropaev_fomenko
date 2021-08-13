@@ -33,12 +33,9 @@ def start_app():
 
 def command2():
     top.destroy() 
-    root.destroy() 
-<<<<<<< HEAD
-    sys.exit()  
-=======
+    root.destroy()
     sys.exit()
->>>>>>> f902508818b51d106d8b1ca63b9a87c7adda2e91
+    sys.exit()
     
     
 def command():
