@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
 import sys
-from list_pop import list_pip
+from src.list_pop import list_pip
 root = Tk()  
 top = Toplevel() 
 top.geometry("600x400")
