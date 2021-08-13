@@ -47,11 +47,6 @@ class TopLevelTest(unittest.TestCase):
         self.assertIn('!label3', children_dct)
         self.assertIn('!label4', children_dct)
         self.assertIn('!text', second_win.children)
-<<<<<<< HEAD
-=======
 
-
-    
->>>>>>> 3903ef4f40d704d2a3c80c49903e3dd83c5ad104
 if __name__ == '__main__':
     unittest.main()
