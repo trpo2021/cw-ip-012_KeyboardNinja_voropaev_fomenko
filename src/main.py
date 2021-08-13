@@ -1,5 +1,4 @@
 from tkinter import *
-import commands
 from PIL import ImageTk, Image
 import sys
 from list_pop import list_pip
