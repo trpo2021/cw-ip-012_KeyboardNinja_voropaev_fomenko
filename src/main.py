@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
 import sys
-from list_pop import list_pip
+from src.list_pop import list_pip
 import src.difficulty
 root = Tk()  
 top = Toplevel() 
