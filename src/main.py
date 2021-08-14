@@ -1,6 +1,7 @@
 from tkinter import *
 from PIL import ImageTk, Image
 import sys
+import os
 from src.list_pop import list_pip
 import src.difficulty
 root = Tk()  
@@ -25,6 +26,10 @@ label3.place(relx=.1, rely=.3)
 label4 = Label(top, text=list_pip(5), justify=LEFT, font='Times 10')
 label4.place(relx=.1, rely=.4)
 
+if os.environ.get('DISPLAY', '') == '':
+    print('no display found. Using :0.0')
+    os.environ.__setitem__('DISPLAY', ':0.0')
+
 
 def start_app():
     root.withdraw() 
@@ -44,7 +49,6 @@ def command():
         app2 = src.difficulty.dif(test_words1)
         app2.mainloop()
     return True
-
 
 
 if __name__ == '__main__':
