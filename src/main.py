@@ -2,6 +2,9 @@ from tkinter import *
 from PIL import ImageTk, Image
 import sys
 import os
+if os.environ.get('DISPLAY', '') == '':
+    print('no display found. Using :0.0')
+    os.environ.__setitem__('DISPLAY', ':0.0')
 from src.list_pop import list_pip
 import src.difficulty
 root = Tk()  
@@ -25,10 +28,6 @@ label3 = Label(top, text=list_pip(3), justify=LEFT, font='Times 10')
 label3.place(relx=.1, rely=.3)
 label4 = Label(top, text=list_pip(5), justify=LEFT, font='Times 10')
 label4.place(relx=.1, rely=.4)
-
-if os.environ.get('DISPLAY', '') == '':
-    print('no display found. Using :0.0')
-    os.environ.__setitem__('DISPLAY', ':0.0')
 
 
 def start_app():
